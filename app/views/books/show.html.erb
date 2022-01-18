@@ -4,12 +4,10 @@
   </div>
 <% end %>
 
+<div class="field">
+ <p><strong>Title:  </strong><%= @book.title %></p>
+ <P><strong>body:  </strong><%=@book.body %></P>
+</div>
 
-  <strong>Title</strong>
-  <P><%= @book.title %></P>
-
-  <strong>body</strong>
-  <P><%= @book.body %></P>
-
-  <%= link_to "Edit", edit_book_path(@book.id) %>
-  <a class="back" href="/books">Back</a>
+<p><%= link_to "Edit", edit_book_path(@book.id) %> |
+<a class="back" href="/books">Back</a></p>
